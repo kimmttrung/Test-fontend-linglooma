@@ -4,8 +4,9 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 // Import page components
 import HomePage from './pages/Home';
 import PageLogin from './pages/Auth/Login';
-import DashboardHeader from './pages/Dashboard/Dashboard-header';
-import DashboardStudent from './pages/Dashboard/Dashboard';
+import Recording from './pages/Features/Recording';
+import Dashboard from './pages/Dashboard/Dashboard';
+import Admin from './pages/Admin/Admin';
 
 const AppRoutes = () => {
   return (
@@ -14,8 +15,9 @@ const AppRoutes = () => {
         <Route path="/" element={<HomePage />} />
         <Route path="/login" element={<PageLogin />} />
 
-        <Route path="/dashboard" element={<DashboardStudent />} >
-
+        <Route path="/admin" element={<Admin />} >
+          <Route path="dashboard" element={<Dashboard />} />
+          <Route path="features" element={<Recording />} />
         </Route>
       </Routes>
 

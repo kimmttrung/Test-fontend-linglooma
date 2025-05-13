@@ -1,10 +1,10 @@
-import Sidebar from "../sidebar/sidebar";
+import { Outlet } from "react-router-dom";
+import Sidebar from "../Admin/sidebar";
 import DashboardHeader from "./dashboard-header";
 
-const DashboardStudent = () => {
+const Dashboard = () => {
     return (
         <div className="flex h-screen bg-gray-50">
-            <Sidebar />
             <div className="flex-1 overflow-y-auto">
                 <div className="container mx-auto p-6">
                     <DashboardHeader />
@@ -24,4 +24,4 @@ const DashboardStudent = () => {
     )
 }
 
-export default DashboardStudent;
+export default Dashboard;
