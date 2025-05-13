@@ -1,6 +1,5 @@
-import { Outlet } from "react-router-dom";
-import Sidebar from "../Admin/sidebar";
 import DashboardHeader from "./dashboard-header";
+import Calendar from "./Calendar";
 
 const Dashboard = () => {
     return (
@@ -14,8 +13,8 @@ const Dashboard = () => {
                             <StudyPlanner /> */}
                         </div>
                         <div className="space-y-6">
-                            {/* <Calendar />
-                            <RecentActivity /> */}
+                            <Calendar />
+                            {/* <RecentActivity /> */}
                         </div>
                     </div>
                 </div>
